@@ -1,0 +1,9 @@
+{
+  "name": "@ehsawyer/little-light",
+  "version": "0.0.2",
+  "description": "A way to represent Guardians in JavaScript",
+  "main": "littleLight.js",
+  "repository": "https://github.com/ehsawyer/little-light",
+  "author": "Ethan Sawyer",
+  "license": "GPL-3.0-only"
+}
