@@ -1,7 +1,7 @@
 {
 	"name": "@ehsawyer/little-light",
 	"version": "0.0.2",
-	"description": "A way to represent Guardians in JavaScript",
+	"description": "A collection of Destiny 2 related classes",
 	"main": "littleLight.js",
 	"repository": "https://github.com/ehsawyer/little-light",
 	"author": "Ethan Sawyer",
