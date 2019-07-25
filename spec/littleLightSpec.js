@@ -3,12 +3,12 @@ const randomPower = randomInt(1, 750)
 
 console.log(`Random Power Level: ${randomPower}`)
 
-describe("Guardian", function() {
-    it("should not be able to access the Guardian class", function() {
+describe("Little Light", function() {
+    it("should not reveal the Guardian class", function() {
         expect(() => { return new Guardian("Warlock", 750) }).toThrowError("Guardian is not a constructor")
     })
     
-    it("should be able to use individual classes", function() {
+    it("should allow individual classes", function() {
         let testWarlock = new Warlock(750)
         expect(testWarlock.archetype).toEqual("Warlock")
         expect(testWarlock.power).toEqual(750)
@@ -22,7 +22,7 @@ describe("Guardian", function() {
         expect(testTitan.power).toEqual(750)
     })
 
-    it("should accurately check power level", function() {
+    it("should accurately return power level", function() {
         expect(() => { return new Warlock(0) }).toThrowError("Not a valid power level")
         expect(() => { return new Warlock(751) }).toThrowError("Not a valid power level")
         expect(() => { return new Warlock(0.5) }).toThrowError("Not a valid power level")
@@ -54,7 +54,7 @@ describe("Guardian", function() {
         expect(() => { return new Titan(749.5) }).not.toThrowError()
     })
 
-    it("should be able to return the raw power level", function() {
+    it("should accurately return the raw power level", function() {
         let testGuardian = new Warlock(749)
         expect(testGuardian.powerRaw).toEqual(749)
 
