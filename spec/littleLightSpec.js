@@ -4,9 +4,8 @@ const randomPower = randomInt(1, 750)
 console.log(`Random Power Level: ${randomPower}`)
 
 describe("Guardian", function() {
-    it("should be able to store Guardian data", function() {
-        let testGuardian = new Guardian("Warlock", 750)
-        expect(testGuardian)
+    it("should not be able to access the Guardian class", function() {
+        expect(() => { return new Guardian("Warlock", 750) }).toThrowError("Guardian is not a constructor")
     })
     
     it("should be able to use the higher classes", function() {
