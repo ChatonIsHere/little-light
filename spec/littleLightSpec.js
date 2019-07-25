@@ -1,4 +1,4 @@
-const { Guardian, Warlock, Hunter, Titan } = require("../src/littleLight")
+const { Guardian, Warlock, Hunter, Titan } = require("../src")
 const randomPower = randomInt(1, 750)
 
 console.log(`Random Power Level: ${randomPower}`)
